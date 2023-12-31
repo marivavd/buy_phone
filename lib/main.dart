@@ -74,6 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 Center(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 28),
                   child: Text(
                     'Смартфон Huawei Nova 11i',
                     style: TextStyle(
@@ -82,22 +84,47 @@ class _MyHomePageState extends State<MyHomePage> {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
+                  ),
                 ),
+                Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: [
                 Padding(
-                    padding: EdgeInsets.all(10),
+                    padding: EdgeInsets.fromLTRB(18, 25, 18, 0),
                     child: Container(
                         width: double.infinity,
-                        height: 450,
+                        height: 460,
                         child: Text(
                           'Смартфон HUAWEI nova 11i оснащен полноэкранным IPS-дисплеем диагональю 6.8 дюймов, что удобно для просмотра фильмов, фотографий, игр или приложений. Тонкий корпус черного цвета изготовлен из прочного пластика, устойчивого к воздействию внешних факторов. Благодаря 8-ядерному процессору и 8 ГБ оперативной памяти, загрузка данных осуществляется с высокой скоростью. Частота экрана 90 Гц обеспечивает плавный переход и смену картинки.Смартфон HUAWEI nova 11i имеет камеру 48+2 Мп, с помощью которой можно делать четкие и детализированные изображения при разном уровне освещенности. Слот для карт рассчитан на две SIM, что удобно для разделения личных или рабочих разговоров. Объема памяти на 128 ГБ достаточно для хранения большого количества информации. Батарея мощностью 40 Вт поддерживает быструю зарядку и рассчитана на длительную работу. Объема памяти на 128 ГБ достаточно для хранения большого количества информации. Батарея мощностью 40 Вт поддерживает быструю зарядку и рассчитана на длительную работу. Объема памяти на 128 ГБ достаточно для хранения большого количества информации. Батарея мощностью 40 Вт поддерживает быструю зарядку и рассчитана на длительную работу.',
                           textDirection: TextDirection.ltr,
                           style: TextStyle(fontSize: 14, fontFamily: 'Inter'),
-                          overflow: TextOverflow.fade,
                         ))),
+                Container(
+                  width: double.infinity,
+                  height: 96,
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: <Color>[
+                        Color.fromARGB(0, 255, 255, 255),
+                        Color.fromARGB(100, 255, 255, 255),
+                        Color.fromARGB(100, 255, 255, 255),
+                        Color.fromARGB(150, 255, 255, 255),
+                        Color.fromARGB(200, 255, 255, 255),
+                        Color.fromARGB(200, 255, 255, 255),
+                        Color.fromARGB(240, 255, 255, 255),
+                        Color.fromARGB(240, 255, 255, 255),
+                      ], // Gradient from https://learnui.design/tools/gradient-generator.html
+                      tileMode: TileMode.mirror,
+                    ),
+                  ),
+                ),
+
                 Container(
                   width: 324,
                   height: 48,
-                  child: OutlinedButton(
+                    child: OutlinedButton(
                       onPressed: () {
                         showModalBottomSheet(
                             context: context,
@@ -199,153 +226,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Color(0xFF4F95FF),
                                 style: BorderStyle.solid,)))
                   ),
-                )
+                )])
               ],
             ),
           ),
-          Container(
-            child: Column(
-              children: [
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Container(
-                      width: double.infinity,
-                      height: 300,
-                    ),
-                    Image.asset("assets/phone.jpg")
-                  ],
-                ),
-                Center(
-                  child: Text(
-                    'Смартфон Huawei Nova 11i',
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
-                Padding(
-                    padding: EdgeInsets.all(10),
-                    child: Container(
-                        width: double.infinity,
-                        height: 450,
-                        child: Text(
-                          'Смартфон HUAWEI nova 11i оснащен полноэкранным IPS-дисплеем диагональю 6.8 дюймов, что удобно для просмотра фильмов, фотографий, игр или приложений. Тонкий корпус черного цвета изготовлен из прочного пластика, устойчивого к воздействию внешних факторов. Благодаря 8-ядерному процессору и 8 ГБ оперативной памяти, загрузка данных осуществляется с высокой скоростью. Частота экрана 90 Гц обеспечивает плавный переход и смену картинки.Смартфон HUAWEI nova 11i имеет камеру 48+2 Мп, с помощью которой можно делать четкие и детализированные изображения при разном уровне освещенности. Слот для карт рассчитан на две SIM, что удобно для разделения личных или рабочих разговоров. Объема памяти на 128 ГБ достаточно для хранения большого количества информации. Батарея мощностью 40 Вт поддерживает быструю зарядку и рассчитана на длительную работу. Объема памяти на 128 ГБ достаточно для хранения большого количества информации. Батарея мощностью 40 Вт поддерживает быструю зарядку и рассчитана на длительную работу. Объема памяти на 128 ГБ достаточно для хранения большого количества информации. Батарея мощностью 40 Вт поддерживает быструю зарядку и рассчитана на длительную работу.',
-                          textDirection: TextDirection.ltr,
-                          style: TextStyle(fontSize: 14, fontFamily: 'Inter'),
-                          overflow: TextOverflow.fade,
-                        ))),
-                Container(
-                  width: 324,
-                  height: 48,
-                  child: OutlinedButton(
-                      onPressed: () {
-                        showModalBottomSheet(
-                            context: context,
-                            builder: (context) {
-                              return Container(
-                                width: double.infinity,
-                                height: 161,
-                                decoration: ShapeDecoration(
-                                  color: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(18),
-                                      topRight: Radius.circular(18),
-                                    ),
-                                  ),
-                                ),
-                                child: Center(
-                                  child: Column(
-                                    children: [
-                                      SizedBox(
-                                        height: 21,
-                                      ),
-                                      Container(
-                                        width: 324,
-                                        height: 48,
-                                        child: OutlinedButton(
-                                            onPressed: () {},
-                                            child: Text('Добавить в корзину',
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  color: Color(0xFF4F95FF),
-                                                  fontFamily: 'Inter',
-                                                  fontWeight: FontWeight.w500,
-                                                  height: 0,
-                                                )),
-                                            style: ButtonStyle(
-                                                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                                    RoundedRectangleBorder(
-                                                      borderRadius: BorderRadius.circular(18.0),
-                                                    )
-                                                ),
-                                                side: MaterialStateProperty.all(
-                                                    BorderSide(
-                                                      color: Color(0xFF4F95FF),
-                                                      width: 2.0,
-                                                      style: BorderStyle.solid,)))),
-                                      ),
-                                      SizedBox(
-                                        height: 21,
-                                      ),
-                                      Container(
-                                        width: 324,
-                                        height: 48,
-                                        child: OutlinedButton(
-                                            onPressed: () {},
-                                            child: Text('Купить в один клик',
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  color: Colors.white,
-                                                  fontFamily: 'Inter',
-                                                  fontWeight: FontWeight.w500,
-                                                  height: 0,
-                                                )),
-                                            style: ButtonStyle(
-                                                backgroundColor: MaterialStatePropertyAll<Color>(Color(0xFF4F95FF)),
-                                                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                                    RoundedRectangleBorder(
-                                                      borderRadius: BorderRadius.circular(18.0),
-                                                    )
-                                                ),
-                                                side: MaterialStateProperty.all(
-                                                    BorderSide(
-                                                      color: Color(0xFF4F95FF),
-                                                      style: BorderStyle.solid,)))
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 21,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              );
-                            });
-                      },
-                      child: Text(
-                        'Купить',
-                        style: TextStyle(color: Colors.white, fontSize: 18),
-                      ),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStatePropertyAll<Color>(Color(0xFF4F95FF)),
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(18.0),
-                              )
-                          ),
-                          side: MaterialStateProperty.all(
-                              BorderSide(
-                                color: Color(0xFF4F95FF),
-                                style: BorderStyle.solid,)))
-                  ),
-                )
-              ],
-            ),
-          )
+
         ],
       ),
     );
