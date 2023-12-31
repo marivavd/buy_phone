@@ -66,10 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Stack(
                   alignment: Alignment.center,
                   children: [
-                    Container(
-                      width: double.infinity,
-                      height: 300,
-                    ),
+
                     Image.asset("assets/phone.jpg")
                   ],
                 ),
@@ -236,10 +233,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 Stack(
                   alignment: Alignment.center,
                   children: [
-                    Container(
-                      width: double.infinity,
-                      height: 300,
-                    ),
                     Image.asset("assets/phone.jpg")
                   ],
                 ),
